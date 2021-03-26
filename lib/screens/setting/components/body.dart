@@ -56,7 +56,7 @@ class _BodyState extends State<Body> {
     return Column(
       children: [
         SizedBox(
-          height: 32,
+          height: 24,
         ),
         Row(
           children: [
@@ -83,7 +83,7 @@ class _BodyState extends State<Body> {
 
   Widget _buildItemOption(String title, Widget widget) {
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 8),
+      padding: const EdgeInsets.all(8),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
