@@ -1,4 +1,5 @@
 import 'package:carplan/screens/car/car_screen.dart';
+import 'package:carplan/screens/management/management_screen.dart';
 import 'package:carplan/screens/setting/setting_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -8,12 +9,17 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
-  int _selectedIndex = 0;
+  int _selectedIndex;
+
+  @override
+  void initState() {
+    super.initState();
+    _selectedIndex = 0;
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
       body: IndexedStack(
         /**
             IndexedStack 화면을 쌓아놓은다.
@@ -21,7 +27,7 @@ class _MainScreenState extends State<MainScreen> {
          */
         index: _selectedIndex,
         children: [
-          Text("123"),
+          ManagementScreen(),
           CarScreen(),
           SettingScreen(),
         ],
@@ -30,7 +36,7 @@ class _MainScreenState extends State<MainScreen> {
         currentIndex: _selectedIndex,
         onTap: _onItemPapped,
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.info), label: "정보"),
+          BottomNavigationBarItem(icon: Icon(Icons.info), label: "관리"),
           BottomNavigationBarItem(icon: Icon(Icons.car_rental), label: "자동차"),
           BottomNavigationBarItem(icon: Icon(Icons.settings), label: "설정"),
         ],

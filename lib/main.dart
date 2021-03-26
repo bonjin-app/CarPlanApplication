@@ -1,4 +1,5 @@
 import 'package:carplan/screens/main/main_screen.dart';
+import 'package:carplan/screens/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,10 +11,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Car Plan',
-      darkTheme: ThemeData.dark(),
-      theme: ThemeData.dark().copyWith(
-        accentColor: Colors.white,
-      ),
+//      darkTheme: ThemeData.dark(),
+//      theme: ThemeData.dark().copyWith(
+//        accentColor: Colors.white,
+//      ),
       home: MainScreen(),
     );
   }
