@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Item extends StatelessWidget {
+class ManagementItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(

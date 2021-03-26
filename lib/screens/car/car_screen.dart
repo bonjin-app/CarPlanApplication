@@ -10,7 +10,7 @@ class CarScreen extends StatelessWidget {
         centerTitle: false,
         title: Text("자동차"),
       ),
-      body: Body(),
+      body: CarBody(),
     );
   }
 }

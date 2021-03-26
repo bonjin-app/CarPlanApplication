@@ -9,7 +9,7 @@ class ManagementScreen extends StatelessWidget {
         centerTitle: false,
         title: Text("관리"),
       ),
-      body: Body(),
+      body: ManagementBody(),
     );
   }
 }

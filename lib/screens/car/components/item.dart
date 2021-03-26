@@ -2,18 +2,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class Item extends StatelessWidget {
+class CarItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 16),
       decoration: BoxDecoration(
-        border: Border(
-            bottom: BorderSide(
-              width: 1,
-              color: Colors.grey.shade200,
-            )),
+        color: Colors.blueAccent,
+        borderRadius: BorderRadius.circular(10),
       ),
       child: AspectRatio(
         aspectRatio: 1.5,
