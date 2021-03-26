@@ -24,10 +24,17 @@ dependencies:
   flutter:
     sdk: flutter
 
-
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+
+  ##==Null safety 를 지원하는 packages만 허용==##
+  # HTTP 리소스를 쉽게 사용할 수있는 일련의 고급 함수 및 클래스가 포함
+  http: ^0.13.0
+
+  ##==Utility==##
+  # 로그을 출력하기 위한 플러그인(옵션)
+  logger: ^0.9.4
 
 dev_dependencies:
   flutter_test:
